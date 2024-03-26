@@ -86,4 +86,3 @@ Consultas resumen:
 9. Devuelve un listado con el número de asignaturas que imparte cada profesor/a. El listado tiene que tener en cuenta aquellos profesores/se que no imparten ninguna asignatura. El resultado mostrará cinco columnas: id, nombre, primer apellido, segundo apellido y número de asignaturas. El resultado estará ordenado de mayor a menor por el número de asignaturas.
 10. Devuelve todos los datos del alumno/a más joven.
 11. Devuelve un listado con los profesores/se que tienen un departamento asociado y que no imparten ninguna asignatura.
-# Entrega-5.2_MySQL_queries
