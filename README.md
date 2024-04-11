@@ -1,3 +1,11 @@
+## Estructura de datos MySQL queries
+
+Este ejercicio se centra exclusivamente en realizar consultas a una base de datos (Tienda y Universidad) utilizando MySQL 
+
+Trabajo del Sprint 5.2 de IT-Academy en la especialización de Node.js
+
+. El repositorio contiene las bases de datos (Tienda y Universidad) con sus respectivos archivos schema, tienda.png o universidad.png y consultas.sql
+
 # Base de datos Tienda
 
 Tenemos las tablas producto y fabricante, cada una con los siguientes campos:
@@ -6,7 +14,7 @@ Tenemos las tablas producto y fabricante, cada una con los siguientes campos:
 - fabricante (codigo, número)
   El campo 'codigo_fabricante' de la entidad producto se relaciona con el campo 'código' de la entidad fabricante.
 
-  Por favor, efectúa las siguientes consultas:
+  Queries de verificación en la Tienda:
 
 1. Lista el nombre de todos los productos que hay en la tabla producto.
 2. Lista los nombres y los precios de todos los productos de la tabla producto.
@@ -34,21 +42,23 @@ Tenemos las tablas producto y fabricante, cada una con los siguientes campos:
 24. Devuelve el nombre del producto, su precio y el nombre de su fabricante, del producto más barato.
 25. Devuelve el nombre del producto, su precio y el nombre de su fabricante, del producto más caro.
 26. Devuelve una lista de todos los productos del fabricante Lenovo.
-    27.Devuelve una lista de todos los productos del fabricante Crucial que tengan un precio mayor que 200 €.
-27. Devuelve un listado con todos los productos de los fabricantes Asus, Hewlett-Packard y Seagate. Sin utilizar el operador IN.
-28. Devuelve un listado con todos los productos de los fabricantes Asus, Hewlett-Packard y Seagate. Usando el operador IN.
-29. Devuelve un listado con el nombre y el precio de todos los productos de los fabricantes el nombre de los cuales acabe por la vocal e.
-30. Devuelve un listado con el nombre y el precio de todos los productos el nombre de fabricante de los cuales contenga el carácter w en su nombre.
-31. Devuelve un listado con el nombre de producto, precio y nombre de fabricante, de todos los productos que tengan un precio mayor o igual a 180 €. Ordena el resultado, en primer lugar, por el precio (en orden descendente) y, en segundo lugar, por el nombre (en orden ascendente).
-32. Devuelve un listado con el código y el nombre de fabricante, solo de aquellos fabricantes que tienen productos asociados en la base de datos.
-33. Devuelve un listado de todos los fabricantes que existen en la base de datos, junto con los productos que tiene cada uno de ellos. El listado tendrá que mostrar también aquellos fabricantes que no tienen productos asociados.
-34. Devuelve un listado donde solo aparezcan aquellos fabricantes que no tienen ningún producto asociado.
-35. Devuelve todos los productos del fabricante Lenovo. (Sin utilizar INNER JOIN).
-36. Devuelve todos los datos de los productos que tienen el mismo precio que el producto más caro del fabricante Lenovo. (Sin usar INNER JOIN).
-37. Lista el nombre del producto más caro del fabricante Lenovo.
-38. Lista el nombre del producto más barato del fabricante Hewlett-Packard.
-39. Devuelve todos los productos de la base de datos que tienen un precio mayor o igual al producto más caro del fabricante Lenovo.
-40. Lista todos los productos del fabricante Asus que tienen un precio superior al precio medio de todos sus productos.
+27.Devuelve una lista de todos los productos del fabricante Crucial que tengan un precio mayor que 200 €.
+28. Devuelve un listado con todos los productos de los fabricantes Asus, Hewlett-Packard y Seagate. Sin utilizar el operador IN.
+29. Devuelve un listado con todos los productos de los fabricantes Asus, Hewlett-Packard y Seagate. Usando el operador IN.
+30. Devuelve un listado con el nombre y el precio de todos los productos de los fabricantes el nombre de los cuales acabe por la vocal e.
+31. Devuelve un listado con el nombre y el precio de todos los productos el nombre de fabricante de los cuales contenga el carácter w en su nombre.
+32. Devuelve un listado con el nombre de producto, precio y nombre de fabricante, de todos los productos que tengan un precio mayor o igual a 180 €. Ordena el resultado, en primer lugar, por el precio (en orden descendente) y, en segundo lugar, por el nombre (en orden ascendente).
+33. Devuelve un listado con el código y el nombre de fabricante, solo de aquellos fabricantes que tienen productos asociados en la base de datos.
+34. Devuelve un listado de todos los fabricantes que existen en la base de datos, junto con los productos que tiene cada uno de ellos. El listado tendrá que mostrar también aquellos fabricantes que no tienen productos asociados.
+35. Devuelve un listado donde solo aparezcan aquellos fabricantes que no tienen ningún producto asociado.
+36. Devuelve todos los productos del fabricante Lenovo. (Sin utilizar INNER JOIN).
+37. Devuelve todos los datos de los productos que tienen el mismo precio que el producto más caro del fabricante Lenovo. (Sin usar INNER JOIN).
+38. Lista el nombre del producto más caro del fabricante Lenovo.
+39. Lista el nombre del producto más barato del fabricante Hewlett-Packard.
+40. Devuelve todos los productos de la base de datos que tienen un precio mayor o igual al producto más caro del fabricante Lenovo.
+41. Lista todos los productos del fabricante Asus que tienen un precio superior al precio medio de todos sus productos.
+    
+    Para obtener más detalles, consulta los siguientes scripts de las queries: tienda_consultas.sql
 
 # Base de datos Universidad
 
@@ -86,3 +96,5 @@ Consultas resumen:
 9. Devuelve un listado con el número de asignaturas que imparte cada profesor/a. El listado tiene que tener en cuenta aquellos profesores/se que no imparten ninguna asignatura. El resultado mostrará cinco columnas: id, nombre, primer apellido, segundo apellido y número de asignaturas. El resultado estará ordenado de mayor a menor por el número de asignaturas.
 10. Devuelve todos los datos del alumno/a más joven.
 11. Devuelve un listado con los profesores/se que tienen un departamento asociado y que no imparten ninguna asignatura.
+
+Para obtener más detalles, consulta los siguientes scripts de las queries: consultas_universidad.sql
